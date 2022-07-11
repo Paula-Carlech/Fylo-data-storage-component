@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor01: hsl(243, 100%, 93%);
+    --cor02: hsl(229, 7%, 55%);
+    --cor03: hsl(228, 56%, 26%);
+    --cor04: hsl(229, 57%, 11%);
+}
+
+html, body{
+    height: 100vh;
+    width: 100vw;
+
+    background: url(images/bg-desktop.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container{
+    position: relative;
+    background-color: transparent;
+}
+
+.box1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cor01);
+
+    height: 100px;
+    width: 100px;
+}
+
+.box2{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cor03);
+
+    height: 100px;
+    width: 100px;
+}
