@@ -9,12 +9,19 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="first">
-        <img id="logo" src="images/logo.svg" alt="Logo"> <br>
-        <img class="icon" src="images/icon-document.svg" alt="Document">
-        <img class="icon" src="images/icon-folder.svg" alt="Folder">
-        <img class="icon" src="images/icon-upload.svg" alt="Upload">
-    </div>
-    <div class="second"></div>
+    <main>
+        <div class="first">
+            <img id="logo" src="images/logo.svg" alt="Logo"> <br>
+            <a href="#"><img class="icon" src="images/icon-document.svg" alt="Document"></a>
+            <a href="#"><img class="icon" src="images/icon-folder.svg" alt="Folder"></a>
+            <a href="#"><img class="icon" src="images/icon-upload.svg" alt="Upload"></a>
+        </div>
+        <div class="second">
+            <p id="text">You've used <strong>XXGB</strong> of your storage.</p> <br>
+            <input type="range" min="0" max="1000" value="100" name="bar" id="bar"> <br>
+            <p id="num0">0 GB</p>
+            <p id="num1">1000 GB</p>
+        </div>
+    </main>
 </body>
 </html>
