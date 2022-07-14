@@ -17,11 +17,23 @@
             <a href="#"><img class="icon" src="images/icon-upload.svg" alt="Upload"></a>
         </div>
         <div class="second">
-            <p id="text">You've used <strong>XXGB</strong> of your storage.</p> <br>
-            <input type="range" min="0" max="1000" value="100" name="bar" id="bar"> <br>
+            <p id="text">You've used <strong> GB</strong> of your storage.</p> <br>
+            <input type="range" min="0" max="1000" value="649" name="bar" id="bar"> <br>
             <p id="num0">0 GB</p>
             <p id="num1">1000 GB</p>
         </div>
+        <div class="box">
+            <p id="rest">XX</p>
+            <p> GB LEFT</p>
+        </div>
+        <script>
+            let valbar = document.getElementById('bar').value
+            let txt1 = document.getElementById('text')
+            let txtrest = document.getElementById('rest')
+
+            txt1.innerHTML = `You've used <strong>${valbar} GB</strong> of your storage.`
+            txtrest.innerHTML = `${1000 - valbar}`
+        </script>
     </main>
 </body>
 </html>

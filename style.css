@@ -114,8 +114,8 @@ input#bar{
 input#bar::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 10px;
-    height: 10px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%; 
 
     background: var(--cor01);
@@ -149,4 +149,30 @@ p#num1{
     padding: 0;
     margin: 0;
     margin-bottom: 20px;
+}
+
+.box{
+    position: absolute;
+    top: 43%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+
+    background-color: var(--cor01);
+    width: 15%;
+    height: 10%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.box > p{
+    display: inline-block;
+    margin: 0;
+    margin-top: 22px;
+    padding: 0;
+    color: var(--cor02);
+}
+
+p#rest{
+    color: var(--cor04);
+    font-size: 20pt;
 }
